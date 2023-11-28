@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <com.michaelzhan.enlightenment.ui.view.LittleTitleWithADot
+        android:id="@+id/edit_a_question_tittle_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="sub_tittle"/>
+    <com.scrat.app.richtext.RichEditText
+        android:id="@+id/edit_a_question_tittle_rich_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:paddingTop="15dp"
+        android:theme="@style/MyEditText"
+
+        app:bulletColor="#FF2196F3"
+        app:bulletGapWidth="8dp"
+        app:bulletRadius="2dp"
+        app:historyEnable="true"
+        app:historySize="99"
+        app:linkColor="#FF2196F3"
+        app:linkUnderline="true"
+        app:quoteCapWidth="2dp"
+        app:quoteColor="#FF2196F3"
+        app:quoteStripeWidth="8dp"/>
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editAQuestion.EditAQuestion">
+    <ScrollView
+        android:id="@+id/m_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.michaelzhan.enlightenment.ui.view.BigHeadlineWithBack
+                    android:id="@+id/tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--TODO more... action bar-->
+            </RelativeLayout>
+
+            <com.michaelzhan.enlightenment.ui.view.LittleTitle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="正文"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginEnd="38dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tittle_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="30dp"
+                        android:overScrollMode="never"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <com.michaelzhan.enlightenment.ui.view.LittleTitle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="选项"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp">
+                <CheckBox
+                    android:id="@+id/open_proficiency_check_box"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:checked="true"
+                    android:theme="@style/MyCheckBox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:textSize="20dp"
+                    android:text="熟练度"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/title"
+                    android:gravity="center" />
+
+                <SeekBar
+                    android:id="@+id/proficiency_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="80"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="4.5dp"
+                    android:layout_marginStart="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="38dp">
+                <CheckBox
+                    android:id="@+id/add_to_memory_curve_check_box"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:theme="@style/MyCheckBox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="添加至记忆曲线"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/title"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/memory_doubt"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="17dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_vector_drawable_doubt"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+            
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/select_reminder_time_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginEnd="42dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="选择复习时间"
+                        android:textSize="20dp"
+                        android:textColor="#696969"
+                        android:textStyle="bold"/>
+                    <RadioGroup
+                        android:id="@+id/RadioGroup1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="19dp"
+                            android:text="自动"
+                            android:textStyle="bold"
+                            android:textColor="#696969"
+                            android:buttonTint="#41AFF8"/>
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="#696969"
+                            android:text="每天"
+                            android:buttonTint="#41AFF8"/>
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="#696969"
+                            android:layout_weight="1"
+                            android:text="每周"
+                            android:buttonTint="#41AFF8"/>
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="#696969"
+                            android:layout_weight="1"
+                            android:text="每月"
+                            android:buttonTint="#41AFF8"/>
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="5dp">
+                        <RadioButton
+                            android:id="@+id/RadioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19dp"
+                            android:text="自定义..."
+                            android:textStyle="bold"
+                            android:textColor="#696969"
+                            android:buttonTint="#41AFF8"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.lihang.ShadowLayout
+                android:id="@+id/OK_button"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:background="?android:selectableItemBackground"
+                android:layout_gravity="center_horizontal"
+                app:hl_cornerRadius="5dp"
+                app:hl_layoutBackground="@color/mainColor">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:text="OK"
+                    android:textStyle="bold"/>
+            </com.lihang.ShadowLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:background="@null"/>
+        </LinearLayout>
+    </ScrollView>
+    <HorizontalScrollView
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="setBold"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_bold" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="setItalic"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_italic" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="setUnderline"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_underline" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="setStrikethrough"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_strikethrough" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="setBullet"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_bullet" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="setQuote"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_quote" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="insertImg"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@drawable/ic_vector_drawable_format_insert_link" />
+
+            <!--<ImageButton android:id="@+id/clear"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:src="@drawable/ic_format_clear"-->
+            <!--android:scaleType="center"-->
+            <!--android:background="?android:selectableItemBackground">-->
+            <!--</ImageButton>-->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</FrameLayout>

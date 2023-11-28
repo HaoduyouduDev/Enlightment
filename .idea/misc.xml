@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.2188186645507813" />
+        <entry key="../../.gradle/caches/transforms-3/812d415a1c6431559328165ce81b8d6d/transformed/jetified-DialogX-0.0.46/res/drawable/rect_dialogx_material_poptip_bkg.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/card_foreground.xml" value="0.1635" />
+        <entry key="app/src/main/res/drawable/card_foreground_selector.xml" value="0.2787196655273438" />
+        <entry key="app/src/main/res/drawable/ic_vector_drawable_back.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_vector_drawable_menu.xml" value="0.285" />
+        <entry key="app/src/main/res/drawable/ic_vector_drawable_nodata.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable/ic_vector_drawable_preview_image.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable/ic_vector_drawable_setting.xml" value="0.1645" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_start_page.xml" value="0.232421875" />
+        <entry key="app/src/main/res/layout/activity_choose_subject.xml" value="0.22060316392591783" />
+        <entry key="app/src/main/res/layout/activity_get_question.xml" value="0.11640625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main_page.xml" value="0.1734404378862523" />
+        <entry key="app/src/main/res/layout/activity_start_page.xml" value="0.1637649536132813" />
+        <entry key="app/src/main/res/layout/content_start_page.xml" value="2.0511734008789064" />
+        <entry key="app/src/main/res/layout/dialog_choose_subject_add_subject_chooes_img.xml" value="0.20993957519531253" />
+        <entry key="app/src/main/res/layout/dialog_choose_subject_add_subject_choose_img.xml" value="0.2595486111111111" />
+        <entry key="app/src/main/res/layout/dialog_get_question_choose_question.xml" value="0.20339355468750003" />
+        <entry key="app/src/main/res/layout/item_choose_subject_icon.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_choosesubject_subject.xml" value="0.1484405517578125" />
+        <entry key="app/src/main/res/layout/item_mainpage_errorbook.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_big_headline_with_back.xml" value="0.18135528564453118" />
+        <entry key="app/src/main/res/layout/layout_headline_with_back.xml" value="0.23412628173828126" />
+        <entry key="app/src/main/res/layout/layout_mainpage_errorbook_item.xml" value="0.2649093627929688" />
+        <entry key="app/src/main/res/layout/layout_no_data.xml" value="0.10245901639344263" />
+        <entry key="app/src/main/res/layout/layout_no_errorbook.xml" value="0.3814453125" />
+        <entry key="app/src/main/res/layout/text_subtitle.xml" value="0.231640625" />
+        <entry key="app/src/main/res/layout/text_title.xml" value="0.231640625" />
+        <entry key="app/src/main/res/xml/file_paths.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">悟题</string>
+    <string name="title_activity_start_page">@string/app_name</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- Custom subjects -->
+    <string name="biology">Biology</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <string name="geography">Geography</string>
+    <string name="history">History</string>
+    <string name="math">Math</string>
+    <string name="physics">Physics</string>
+    <string name="politics">Politics</string>
+
+    <!-- Tips -->
+    <string name="tips_cannot_load_errorBooks">Can\'t not load error books.</string>
+
+</resources>

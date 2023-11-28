@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:background="?android:selectableItemBackground"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:layout_marginBottom="15dp"
+        android:focusableInTouchMode="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.michaelzhan.enlightenment.ui.view.LittleTitleWithADot
+                android:id="@+id/edit_questions_question_content_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:dotIsLight="true"
+                app:text="题目"/>
+            <ImageView
+                android:id="@+id/edit_questions_question_del_button"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_vector_drawable_choose_question_del"/>
+<!--            <TextView-->
+<!--                android:id="@+id/edit_questions_question_tips"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:gravity="bottom"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:layout_toStartOf="@id/edit_questions_question_del_button"-->
+<!--                android:text="长按编辑"-->
+<!--                android:textSize="16dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#807F7F" />-->
+        </RelativeLayout>
+
+        <com.scrat.app.richtext.RichEditText
+            android:id="@+id/edit_questions_question_rich_text_content_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+
+            app:bulletColor="#FF2196F3"
+            app:bulletGapWidth="8dp"
+            app:bulletRadius="2dp"
+            app:historyEnable="true"
+            app:historySize="99"
+            app:linkColor="#FF2196F3"
+            app:linkUnderline="true"
+            app:quoteCapWidth="2dp"
+            app:quoteColor="#FF2196F3"
+            app:quoteStripeWidth="8dp" />
+
+        <com.michaelzhan.enlightenment.ui.view.LittleTitleWithADot
+            android:id="@+id/edit_questions_question_answer_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="20dp"
+            app:dotIsLight="false"
+            app:text="答案"/>
+
+        <com.scrat.app.richtext.RichEditText
+            android:id="@+id/edit_questions_question_rich_text_answer_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+
+            app:bulletColor="#FF2196F3"
+            app:bulletGapWidth="8dp"
+            app:bulletRadius="2dp"
+            app:historyEnable="true"
+            app:historySize="99"
+            app:linkColor="#FF2196F3"
+            app:linkUnderline="true"
+            app:quoteCapWidth="2dp"
+            app:quoteColor="#FF2196F3"
+            app:quoteStripeWidth="8dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
